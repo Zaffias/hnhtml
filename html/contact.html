@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>We love guitars</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div id="root">
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="../index.html">Home</a>
+                </li>
+                    <li class="navbar-item">
+                        <a href="./html/objective.html">Our objective</a>
+                    </li>
+                    <li class="navbar-item">Our product
+                        <div class=dropdown-menu>
+                            <a href="./guitarpages/stratocaster.html" class="dropdown-item">Stratocaster</a>
+                            <a href="./guitarpages/telecaster.html"  class="dropdown-item">Telecaster</a>
+                            <a href="./guitarpages/lespaul.html"  class="dropdown-item">Les Paul</a>
+                        </div>
+                    </li>
+                    <li class="navbar-item">miaugu
+                        <div class=dropdown-menu>
+                            
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="./contact.html">Contact us</a>
+                    </li>
+                </ul>
+        </nav>
+        <form action="http://vip.groupehn.com:20003/html/infospost.php" method="post" class="contact-form">
+            <label for="lastname" class="contact-label">First name: </label>
+            <input class="form-input" id="lastname" type="text" name="lastname" />
+            <label for="firstname" class="contact-label">Last name: </label>
+            <input class="form-input" id="firstname" type="text" name="firstname" />
+            <label for="email" class="contact-label">Email name: </label>
+            <input class="form-input" id="mail" type="email" name="email" placeholder="yourmail@mail.com" required/>
+            <label for="request">Your request, if it is blank we will contact you via the provided email.</label>
+            <textarea class="form-textarea" name="request" id="request" cols="66" rows="10"></textarea>
+            <label for="country">Country where you reside:</label>
+            <select class="form-select" name="country" id="country">
+                <option value="spain">Spain</option>
+                <option value="france">France</option>
+                <option value="portugal">Portugal</option>
+                <option value="germany">Germany</option>
+                <option value="uk">United Kingdom</option>
+                <option value="italy">Italy</option>
+            </select>
+            <button type="submit" class="submit-button">Send</button>
+        </form>
+    </div>
+</body>
+</html>
